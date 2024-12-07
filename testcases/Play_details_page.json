@@ -1,0 +1,15 @@
+{
+  "description": "Config for MeeTimeTest",
+  "environment": [
+    {
+      "type": "device",
+      "label": "phone"
+    }
+  ],
+  "driver": {
+    "type": "DeviceTest",
+    "py_file": [
+      "Play_details_page.py"
+    ]
+  }
+}

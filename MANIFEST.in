@@ -1,0 +1,11 @@
+# 与打包用例对应的json文件
+include testcases/Home_page.json
+# 用例依赖的aw
+include aw/*.py
+# 用例中用到的各类配置文件
+include config/*.xml
+include config/*.json
+include config/*.txt
+# 用例中用到的resource
+include resource/*
+include resource/images/*

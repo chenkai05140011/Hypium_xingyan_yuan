@@ -1,0 +1,11 @@
+{
+    "environment": [
+        {
+            "type": "device",
+            "label": "phone"
+        }
+    ],
+    "driver": {
+        "type": "DeviceTest"
+    }
+}
