@@ -1,23 +1,27 @@
-# API_Automation
-基于Pytest+request+Allure的接口自动化开源框架
+HypiumProjectTemplate
 
-----
-#### 模块类的设计
-`Request.py` 封装request方法，可以支持多协议扩展（get\post\put）
+HypiumTest
 
-`Config.py`读取配置文件，包括：不同环境的配置，email相关配置
-
-`Log.py` 封装记录log方法，分为：debug、info、warning、error、critical
-
-`Email.py`封装smtplib方法，运行结果发送邮件通知
-
-`Assert.py` 封装assert方法
-
-`Hash.py` 封装常用加密方法
-
-`Session.py` 封装获取登录cookies方法
-
-`run.py` 核心代码。定义并执行用例集，生成报告
-
-----
-#### 详细介绍见原文[接口自动化框架](https://www.jianshu.com/p/e31c54bf15ee)
+     aw                                       // 工程中自定义模块文件夹
+    
+            Utils.py                         // 示例模块文件
+    
+     config                                  // 测试工程配置文件夹
+    
+            user_config.xml             // 测试工程配置文件，主要是测试框架的任务配置
+    
+    resource                              // 测试资源文件夹，测试过程中用到的资源文件默认会优先从当前文件夹进行查找
+    
+            images            // 资源文件子目录
+    
+                icon_mms.png   // 资源文件，以png图片为例
+    
+    testcases                             // 测试用例文件夹，测试过程中的测试用例文件优先会从当前文件夹进行查找
+    
+            Example.json                  // Example测试用例配置文件，配置用例设备信息等
+            
+            Example.py                     // Example测试用例文件，实际的测试逻辑代码
+    
+    MANIFEST.in                // 声明脚本执行过程中需要用到的aw包 
+    
+    setup-regression.py                // 声明用例
